@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+}
+
+.wrapper {
+  margin-bottom: 40px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-shadow: #356626 1px 2px 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+}
+
+
+p {
+  font-size: 20px;
+  margin: 20px 20px 10px;
+  text-align: justify;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 420px;
+  overflow: hidden;
+}
+
+button {
+  background-color: #356626;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'Lora', serif;
+  letter-spacing: 2px;
+}
+
+.btnText {
+  background: white;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #256e0f;
+  cursor: pointer;
+  text-shadow: #272626 1px 1px 1px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnRemove {
+  font-size: 18px;
+}
+
+.btnRemove:hover,
+.btnDelete:hover {
+  background-color: #4c813c;
+}
+
+.btnDelete {
+  font-size: 20px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 20px;
+}
+
+.btn {
+  position: relative;
+  background-color: #fff;
+  width: 80px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn-prev::after {
+  right: 0;
+  background-image: url(svg/arrow-left.svg);
+}
+
+.btn-prev:hover::after {
+  background-image: url(svg/arrow-left-hover.svg);
+}
+
+.btn-next::after {
+  left: 0;
+  background-image: url(svg/arrow-right.svg);
+}
+
+.btn-next:hover::after {
+  background-image: url(svg/arrow-right-hover.svg);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
